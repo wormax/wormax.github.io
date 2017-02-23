@@ -134,15 +134,13 @@ function download(file)
 {
  window.location=file;
 }
-    var getclient = $.cookie('client');
-
-    if (getclient == null) {
-        document.cookie = "client";
-    }
-    else {
-        client();
-    }
 	
+if (document.cookie.indexOf("client") >= 0) {
+}
+else {
+	document.cookie = "client";
+	client();
+}	
 function client() {
 $.getJSON('https://geoip-db.com/json/geoip.php?jsonp=?') 
          .done (function(location) {
