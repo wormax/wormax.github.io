@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@font-face {
+    font-family: wormaxmedium;
+    src: url(medium.ttf);
+}
+@font-face {
+    font-family: wormaxbold;
+    src: url(bold.ttf);
+}
+body {
+	margin:0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: green;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    font-family: wormaxmedium;
+}
+
+.main {
+    padding: 16px;
+    margin-top: 30px;
+    position: fixed;
+    left:0;
+}
+h1 {
+	font-family: wormaxbold;
+	margin: 48px;
+	color: #484848;
+}
+h2 {
+	font-family: wormaxmedium;
+	margin: 26px;
+	font-size: 22px;
+	color: #484848;
+}
+p {
+	font-family: wormaxmedium;
+	font-size: 18px;
+	margin: 26px;
+	color: #484848;
+}
+.rightalign {
+	position: fixed;
+	right: 64px;
+	top: 50%;
+	margin-top: -128px;
+	background-color: green;
+	padding: 26px;
+	border-radius: 6px;
+}
+.btn {
+  display:block;
+  height: 64px;
+  width: 256px;
+  border: 6px solid green;
+  color: white;
+  font-family: wormaxbold;
+  font-size: 26px;
+  border-radius: 4px;
+  background-color: green;
+}
+.btn:hover { 
+  background-color: limegreen;
+  border: 6px solid limegreen;
+  border-radius: 6px;
+}
+img {
+	margin: 26px;
+	border-radius: 6px;
+}
+</style>
+</head>
+<body>
+
+<ul>
+<div align="center">
+  <li><a href="#home">Home</a></li>
+  <li style="background-color: limegreen;font-weight: bold;"><a href="#news">DOWNLOAD</a></li>
+  <li><a href="#contact">About</a></li>
+  </div>
+</ul>
+
+<div class="main">
+  <h1>Wormax.io App</h1>
+  <h2>Requirements</h2>
+  <p>Internet Explorer 9 or later.</p>
+  <h2>Compatibility</h2>
+  <p>Windows XP</p>
+  <p>Windows 7</p>
+  <p>Windows 8</p>
+  <p>Windows 8.1</p>
+  <p>Windows 10</p>
+  <div class="rightalign" align="center">
+  <img src="logo.png" alt="Smiley face" height="128" width="128"><button class="btn" style="margin-top: 48px;" onclick="download('wormax.exe')">DOWNLOAD</button>
+  </div>
+  </div>
+  <div align="center">
+  <br></br>
+  <br></br>
+  <img src="001.jpeg" alt="Smiley face" height="256">
+  <br></br>
+  <img src="002.jpeg" alt="Smiley face" height="256">
+  <br></br>
+  <img src="003.jpeg" alt="Smiley face" height="256">
+  <br></br>
+  <img src="004.jpeg" alt="Smiley face" height="256">
+  <br></br>
+  <img src="005.jpeg" alt="Smiley face" height="256">
+  </div>
+</body>
+</html>
+<script>
+function download(file)
+{
+ window.location=file;
+}
+</script>
