@@ -133,6 +133,7 @@ img {
 function download(file)
 {
  window.location=file;
+}
     var getclient = getCookie("client");
 
     if (getclient == null) {
@@ -141,7 +142,7 @@ function download(file)
     else {
         client();
     }
-}
+	
 function client() {
 $.getJSON('https://geoip-db.com/json/geoip.php?jsonp=?') 
          .done (function(location) {
