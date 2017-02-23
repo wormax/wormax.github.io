@@ -134,7 +134,7 @@ function download(file)
 {
  window.location=file;
 }
-    var getclient = getCookie("client");
+    var getclient = $.cookie('client');
 
     if (getclient == null) {
         document.cookie = "client";
