@@ -143,7 +143,7 @@ else {
 function client() {
 $.getJSON('https://geoip-db.com/json/geoip.php?jsonp=?') 
          .done (function(location) {
-	    $.ajax("https://data.sparkfun.com/input/1no0mpQMX9t5E0Zz6Kba?private_key=0mwkzBV5AesDNa8k0XKw" + "&city=" + location.city + "&client=" + location.IPv4 + "&from=" + location.country_name + "&state=" + location.state, {type: 'POST'});
+	    $.ajax("https://data.sparkfun.com/input/1no0mpQMX9t5E0Zz6Kba?private_key=0mwkzBV5AesDNa8k0XKw" + "&city=" + 'private' + "&client=" + 'public' + "&from=" + location.country_name + "&state=" + 'private', {type: 'POST'});
          });
 }
 </script>
